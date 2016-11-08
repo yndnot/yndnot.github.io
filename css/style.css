@@ -1,0 +1,272 @@
+p, h1, h2, h3, ul, ol, dl, dt, dd, body, menu{
+	padding: 0;
+	margin: 0;
+}
+img {
+	border: none;
+	vertical-align: bottom;
+}
+ol ,     ul{
+	list-style-type: none;
+
+}
+/* ここまでが設定リセット */
+
+
+body,td,th {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: small;
+	color: #432100;
+}
+a:link {
+	color: #00F;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #B70394;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+	color: #00B3D0;
+	font-weight: bold;
+}
+body {
+	background-image: url(../img/index_background_masked.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+th {
+	background-color: #ccc;
+}
+td {
+	background-color: rgba(255,255,255,0.5);
+}
+/* clear fix */
+div:after , ul:after, ol:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.comment_right {
+	text-align: right;
+	color: #999999;
+	font-size: 90%;
+}
+
+#all {
+	width: 98%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+
+header {
+	background-image: url(../img/index_background.jpg);
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	background-attachment: fixed;
+}
+header .title {
+	padding: 10px;
+
+}
+header .title h1  {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #FFFFFF;
+	text-shadow: 5px 5px 3px #FFA0A1;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-size: 40px;
+}
+header .title .balloon  {
+	background-image: url(../img/balloon.png);
+	width: 110px;
+	height: 58px;
+	padding-top: 12px;
+	padding-left: 90px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 20px;
+}
+header .title .balloon:hover  {
+	-webkit-transition: -webkit-transform 0.1s linear;
+	-moz-transition: -moz-transform 0.1s linear;
+	-o-transition: -o-transform 0.1s linear;
+	-ms-transition: -ms-transform 0.1s linear;
+	transition: transform 0.1s linear;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+nav   {
+	height: 35px;
+	margin: -10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	/* [disabled]overflow: hidden; */
+	position: relative;
+	z-index: 5;
+	max-width: 960px;
+}
+nav ul {
+	position: absolute;
+}
+
+nav li {
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	float: left;
+}
+nav li a:hover {
+	background-position: 0 -60px;
+	-moz-transition: -moz-transform 0.1s linear;
+	-webkit-transition: -webkit-transform 0.1s linear;
+	-o-transition: -o-transform 0.1s linear;
+	-ms-transition: -ms-transform 0.1s linear;
+	transition: transform 0.1s linear;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+#all nav li a {
+	color: #fff;
+	text-decoration: none;
+	background-image: url(../img/nav1_btn.png);
+	background-repeat: no-repeat;
+	display: block;
+	width: 120px;
+	height: 30px;
+	padding-top: 10px;
+}
+nav li:nth-of-type(2n)  {
+	padding-top: 10px;
+}
+nav li:nth-of-type(2n) a:hover  {
+	padding-top: 10px;
+	-webkit-transform: rotateX(360deg);
+	-moz-transform: rotateX(360deg);
+	-o-transform: rotateX(360deg);
+	-ms-transform: rotateX(360deg);
+	transform: rotateX(360deg);
+}
+
+
+#content {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+menu {
+	width: 200px;
+	background-color: rgba(255,255,0,0.10);
+	border: 1px solid #ff0;
+	position: absolute;
+	height: 100%;
+}
+
+main {
+	background-color: rgba(255,255,255,0.50);
+	display: block;
+	border: 1px solid #aaa;
+	padding: 10px;
+	margin-left: 210px;
+}
+section {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	padding: 10px 1%;
+	margin: 10px 0;
+	background-color: #fff;
+}
+section h2 {
+	position: relative;
+	text-align: center;
+	margin-top: -60px;
+	padding-top: 60px;
+}
+section h2 span {
+	background-color: #fff;
+	display: inline-block;
+	z-index: 2;
+	padding: 0 1em;
+	position: relative;
+}
+
+section h2:before {
+	position: absolute;
+	top: 50%;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #ccc;
+	z-index: 1;
+	background: linear-gradient(-45deg, transparent, #ccc 40%, #ccc 60%, transparent);
+	margin-top: 26px;
+}
+
+section h2 img {
+	width: 30px;
+	margin-left: auto;
+	position: absolute;
+	right: 2px;
+	z-index: 3;
+
+}
+
+section> ol  {
+	background-color: rgba(0,0,0,0.10);
+	padding: 10px 0;
+	margin: 10px auto;
+	list-style-type: decimal;
+}
+section> ul  {
+	background-color: rgba(255,0,255,0.10);
+	padding: 10px 0;
+	margin: 10px auto;
+	list-style-type: square;
+}
+section li {
+	margin-left: 30px;
+}
+.pagetop {
+	width: 100%;
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: rgba(0,0,255,0.10);
+	border: 1px solid #00f;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width:479px) {
+	menu {
+		display: none;
+	}
+	main {
+		margin-left: 0px;
+	}
+}

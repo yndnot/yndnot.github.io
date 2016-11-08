@@ -3,38 +3,108 @@
 <head>
 <meta charset="utf-8">
 <title>7sounD's RooM</title>
-<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript">
+   function gate() {
+      var UserInput = prompt("パスワードを入力して下さい:","");
+      location.href = UserInput + "/passed.html";
+   }
+</script>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/stickyfloat.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script>
+$(function() {
+	$("nav ul").stickyfloat({
+		duration: 0,
+		lockBottom: false,
+//		offsetY: 0
+	});
+});
+</script>
+<!-- レスポンシブデザインのためのビューポート設定 -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
-<h1>てすてすてすと</h1>
-<p><strong>TANO*C</strong>日々を過ごそう<strong>ヾ(゜Д゜)ノ</strong><br>
-好きなことに<em>全力を！</em></p>
-<p align="center">GitHubでHTMLファイルのバージョン管理をしようと思ったら ページ公開すら簡単にできると聞いて触ってみる</p>
+<div id="all">
+	<header>
+		<div class="title">
+			<h1>- 7sounD's RooM -</h1>
+			<div class="balloon">Webで何が<br>
+				できるのか？
+			</div>
+		</div>
+	</header>
 
-<hr>
+	<nav>
+		<ul>
+			<li><a href="#all">HOME</a></li>
+			<li><a href="#works">検討項目</a></li>
+			<li><a href="#extra">おまけ</a></li>
+<!--
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+-->
+		</ul>
+	</nav>
 
-<h2>初回処理</h2>
-<ol>
-	<li>GitHubサイトでリポジトリ作成。 Name→ <strong>'オーナー名'.github.io</strong> このネーミングルールがミソ</li>
-	<li>ローカルにClone。 Quick setupの<strong>[Set up in Desktop]</strong>ボタンで楽ちん</li>
-	<li>Cloneしたフォルダ直下に<strong>index.html</strong>を作って置く</li>
-	<li>ここからはGitHubアプリで。 'オーナー名'.github.ioリポジトリを選ぶ</li>
-	<li>Changesの変更内容を見て変更するファイルをチェック。 Commitしたいファイルを選んでSummary書いてCommit。 これはローカルリポジトリ相手</li>
-	<li>Commitが終わったら右上の[Publish]で初回の公開処理。 これはリモートリポジトリ相手</li>
-	<li>https://'オーナー名'.github.io/ にアクセスすると表示される！ Sync中～直後は更新処理が走ってるらしく、少し時間を要する場合もある</li>
-</ol>
-<h2>以降の更新ルーチン　※GitHubアプリ内で完結できる</h2>
-<ol>
-	<li>Changesを選択してCommitしたいファイルを選び、Summaryを書いてCommit</li>
-	<li>Commitが終わったら右上の[Sync]で更新処理</li>
-	<li>https://'オーナー名'.github.io/ にアクセスして確認</li>
-</ol>
-<p>以上の流れが<a href="https://pages.github.com/" target="_blank">公式</a>に。 レスポンシブルデザインいいなぁ</p>
-<p>ついでに。リポジトリ削除→ リポジトリ内Settingタブ選んで最下[Delete this repository]ボタンをﾎﾟﾁｰ</p>
+	<div id="content">
+		<menu>
+			<p class="comment_right">ここから&lt;menu&gt;タグ</p>
+			<p>メニュー</p>
+			<p>※仮置き～。使い方考え中</p>
+			<p class="comment_right">↓ height:100%で伸ばしてる ↓</p>
+			<p class="comment_right">widthが480px未満なら非表示<br>
+				（レスポンシブの練習）</p>
+			<p class="comment_right">ここまで&lt;menu&gt;タグ</p>
+		</menu>
 
-<hr>
-
-<a href="https://docs.google.com/spreadsheets/d/1nL5EWfGJRDbJ4ANts0b-68fGJVLlA91i2UiDrNtvVco/edit?usp=sharing" target="_blank">七音メモ</a> - 非公開のｃ⌒っﾟдﾟ)っφ　ﾒﾓﾒﾓ...</a>
+		<main>
+			<p class="comment_right">ここから&lt;main&gt;タグ</p>
+			<p><strong>TANO*C</strong>日々を過ごそう<strong>ヾ(゜Д゜)ノ</strong><br>
+				好きなことに<em>全力を！</em></p>
+			<p>Web屋さんになるための勉強がてら、やってみたいことを見つけては試してみるサイト。
+			<p>コーディングLv８：デザインLv２　くらいのパワーバランスっぽい。　CSS/JSは奥が深くて面白い…！</p>
+			<section id="works">
+				<h2><span>検討項目</span><a href="#all"><img src="img/page_top_mini.png" alt=""/></a></h2>
+				<ol>
+					<li>縦以外の任意方向へのスクロール</li>
+					<li>なうぷれ系の埋め込みをページ内でできないか</li>
+						<ol>
+							<li><a href="http://www.yoheim.net/blog.php?q=20130702" target="_blank">JSでiTunes API</a>
+						</ol>
+					<li>bootstrapのアレコレ</li>
+					<li>各種CMSの流行り廃れ及び自由度</li>
+				</ol>
+			</section>
+			<section id="extra">
+				<h2><span>おまけ</span><a href="#all"><img src="img/page_top_mini.png" width="30" height="30" alt=""/></a></h2>
+				<ul>
+					<li>JavaScriptを用いた簡易パスワード
+						<ul>
+							<li><input type="button" value="パスワードを入力して秘密のページへアクセスする" onclick="gate();">
+								<ul>
+									<li><a href="http://allabout.co.jp/gm/gc/23839/" target="_blank">元ネタ</a>（外部リンク）</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="github.html" target="_blank">GitHubで簡単Webページ公開</a></li>
+				</ul>
+			</section>
+		</main>
+	</div>
+	<p class="pagetop"><a href="#all"><img src="img/page_top.png" alt="" width="100" height="100"/></a></p>
+	<footer>
+		<p><small>Copyright &copy; 七音@7sounD</small></p>
+	</footer>
+</div>
 </body>
 </html>
