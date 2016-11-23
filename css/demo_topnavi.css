@@ -1,0 +1,120 @@
+@charset "utf-8";
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	overflow: hidden;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	transition: .3s;}
+header h1  , nav li {
+	float: left;
+}
+header h1 {
+	font-weight: bold;
+	font-size: 160%;
+	width: 18%;
+	margin-left: 2%;
+}
+
+header a  , nav a{
+	color: #fff;
+	text-decoration: none;
+	width: 80%;
+}
+
+nav {
+	text-align: center;
+	margin-top: 5px;
+}
+nav a {
+	display: block;
+}
+nav a:hover {
+	border-radius: 50%;
+	background: rgba(255,255,255,0.2);
+}
+
+nav li   {
+	width: 26%;
+}
+section {
+	padding-top: 100px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 150px;
+}
+
+/* h2にボーダー */
+section h2 {
+	position: relative;
+	text-align: center;
+	background-color: #fff;
+}
+section p{
+	background: rgba(255,255,255,0.7);
+}
+section h2 span {
+	background-color: #fff;
+	display: inline-block;
+	z-index: 2;
+	padding: 0 1em;
+	position: relative;
+	font-weight: bold;
+	font-size: 140%;
+}
+section h2:before {
+	position: absolute;
+	top: 50%;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #ccc;
+	z-index: 1;
+	background: linear-gradient(-45deg, transparent, #ccc 40%, #ccc 60%, transparent);
+}
+#section1 {
+	background-image: url(../img/index_background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#section2 {
+	background-image: url(../img/index_background_2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#section3 {
+	background-image: url(../img/index_background_3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+footer {
+	padding: 2%;
+	width: 96%;
+	background: #000;
+	color: #FFF;
+	overflow: hidden;
+}
+footer a {
+	color: #29EBCF;
+	text-decoration: none;
+}
+footer p {
+	float: left;
+}
+
+footer #pagetop {
+	float: right;
+}
+footer #pagetop a {
+	display: block;
+	padding: 5px 8px;
+	color: #fff;
+	background: #555;
+	border-radius: 50%;
+}

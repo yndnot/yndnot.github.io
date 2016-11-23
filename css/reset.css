@@ -1,0 +1,20 @@
+@charset "utf-8";
+html, body, menu, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th , td{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+header, footer, nav, section, main {
+	display: block;
+}
+ol, ul {
+	list-style-type: none;
+}
+div:after, ul:after, ol:after {
+	content: "";
+	clear: both;
+}
